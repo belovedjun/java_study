@@ -1,0 +1,8 @@
+public class VariableTypeMain01 {
+	public static void main(String[] args) {
+		System.out.println("===논리형===");
+		//논리형 : true,false
+		boolean b = true;
+		System.out.println("b= " + b);
+	}
+}

@@ -1,0 +1,9 @@
+public class PrintMain03 {
+	public static void main(String[] args) {
+		//문자 : 한 문자
+		System.out.println('A');
+		System.out.println('가');
+		System.out.println('산');
+	}
+	
+}

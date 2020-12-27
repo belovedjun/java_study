@@ -1,0 +1,21 @@
+public class PrintMain06 {
+	public static void main(String[] args) {
+		/*
+		 * [실습]
+		 * system.out.printf()를 이용해서 아래와 같이
+		 * 출력하시오
+		 * 
+		 * 국어 : 98점
+		 * 영어 : 97점
+		 * 총점 : 195점
+		 * 평균 : 97.5점
+		 */
+		
+		System.out.printf("%s는, %d점입니다", "국어점수", 98);
+		System.out.printf("%s는, %d점입니다", "영어점수", 97);
+		System.out.printf("%s은, %d점입니다", "총점", 195);
+		System.out.printf("%s는, %d점입니다", "평균점수", 97.5);
+		
+		
+	}
+}

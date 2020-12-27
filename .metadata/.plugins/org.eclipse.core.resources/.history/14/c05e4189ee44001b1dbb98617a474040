@@ -1,0 +1,28 @@
+public class PrintMain05 {
+	public static void main(String[] args) {
+		/*
+		 * system.out.printf(포맷문자,데이터)를 이용한 출력
+		 * (데이터의 종류를 표시할 수 있는 포맷문자 지원)
+		 */
+		
+		//문자            포맷문자  데이터
+		System.out.printf("%c\n", 'A');//\n 줄바꿈 특수문자
+		System.out.printf("%c%n", '강');//%n 줄바꿈 포맷문자
+		System.out.printf("%c%n", 'X');
+		
+		System.out.println("------------");
+		
+		//정수
+		System.out.printf("%d%n", 67);
+		System.out.printf("%,d%n",10000);
+		
+		System.out.println("------------");
+		
+		//실수
+		System.out.printf("%f%n",35.896);
+		System.out.printf("%.3f%n", 35.896);
+		
+		
+		
+	}
+}

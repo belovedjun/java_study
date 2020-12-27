@@ -1,0 +1,13 @@
+public class PrintMain05 {
+	public static void main(String[] args) {
+		/*
+		 * system.out.printf(포맷문자,데이터)를 이용한 출력
+		 * (데이터의 종류를 표시할 수 있는 포맷문자 지원)
+		 */
+		
+		//문자            포맷문자  데이터
+		System.out.printf("%c", 'A');
+		
+		
+	}
+}

@@ -1,0 +1,10 @@
+public class CastMain03 {
+	public static void main(String[] args) {
+		int a = 2;
+		char b = 'A'; //아스키코드 65
+		              //char->int 자동적 형변환
+		int result =  a + b;//b -> 65
+		System.out.println("result = " + result);
+		System.out.println("result = " + (char)result);
+	}
+}

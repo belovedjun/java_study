@@ -1,0 +1,6 @@
+public class VariableTypeMain03 {
+	public static void main(String[] args) {
+		char single = '\'';
+		System.out.println("single = " + single);
+	}
+}
