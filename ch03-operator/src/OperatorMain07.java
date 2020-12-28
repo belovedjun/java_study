@@ -1,5 +1,5 @@
 public class OperatorMain07 {
-	public static void main(String args) {
+	public static void main(String[] args) {
 		System.out.println("===논리연산자===");
 		
 		boolean a,b,result;
