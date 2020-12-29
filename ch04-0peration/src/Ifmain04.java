@@ -4,12 +4,26 @@ public class Ifmain04 {
 				new java.util.Scanner(System.in);
 		
 		int score;//성적
-		char grade;//등급
+		char grade;//등급 문자코드
 		
 		System.out.print("성적 입력>>");
 		score = input.nextInt();
+		if(score >= 90 && score <= 100) {
+			grade = 'A';
+		}else if(score >= 80 && score <= 89) {
+			grade = 'B';
+		}else if(score >= 70 && score <= 79) {
+			grade = 'C';
+		}else if(score >= 60 && score <= 69) {
+			grade = 'D';
+		}else if(score >= 0 && score <= 59) {
+			grade = 'F';
+		}else {
+			grade = '?';
+		}
 		
-		
+		System.out.printf("성적 : %d%n", score);
+		System.out.printf("등급 : %c%n", grade);
 		
 		input.close();
 	}
