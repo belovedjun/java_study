@@ -25,13 +25,20 @@ public class Score {
 		ÃÑÁ¡ = ±¹¾î + ¿µ¾î + ¼öÇÐ;
 		Æò±Õ = ÃÑÁ¡ / 3.0f;
 		
+				//float -> int
 		switch((int)(Æò±Õ/10)) {
 		case 10:
 		case 9: ÇÐÁ¡ = 'A'; break;
 		case 8: ÇÐÁ¡ = 'B'; break;
 		case 7: ÇÐÁ¡ = 'C'; break;
 		case 6: ÇÐÁ¡ = 'D'; break;
+		default : ÇÐÁ¡ = 'F'; break;
 		}
+		
+		System.out.println();//ÁÙ¹Ù²Þ
+		System.out.printf("ÃÑÁ¡ : %d%n", ÃÑÁ¡);
+		System.out.printf("ÇÐÁ¡ : " + ÇÐÁ¡ + "ÇÐÁ¡");
+		System.out.printf("Æò±Õ : %.2f%n", Æò±Õ);
 		
 		input.close();
 	}

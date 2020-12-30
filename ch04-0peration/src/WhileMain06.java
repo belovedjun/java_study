@@ -1,5 +1,5 @@
 public class WhileMain06 {
-	public static void mian(String[] args) {
+	public static void main(String[] args) {
 		/*
 		 * [실습] while문을 빠져나가는 경우
 		 * 커피전문점에서 아메리카노가 4,000원 입니다.
