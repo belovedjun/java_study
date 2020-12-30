@@ -1,5 +1,5 @@
 public class OpreatorMain03 {
-	public static void mian(String[] args) {
+	public static void main(String[] args) {
 		System.out.println("===산술연산자===");
 		
 		System.out.println(1 + 1);

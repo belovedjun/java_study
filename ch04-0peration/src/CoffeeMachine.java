@@ -15,7 +15,7 @@ public class CoffeeMachine {
 		//보유 금액
 		int amount = 0; //+
 		//보유 동전(거스름돈)
-		int coin = 10000; //-
+		int coin = 1000; //-
 		
 		// 계속 반복하여 아래의 코드를 실행한다.
 		while(true) {
@@ -49,6 +49,9 @@ public class CoffeeMachine {
 				
 				//거스름돈을 출력함
 				System.out.printf("거스름돈 : %,d%n", change);
+				System.out.println(
+						"맛 좋은 커피가 준비되었습니다.");
+				
 				//현재 자판기 정보 출력
 				System.out.println("==현재자판기 정보==");
 				System.out.printf("동전보유금액: %,d원%n",coin);
