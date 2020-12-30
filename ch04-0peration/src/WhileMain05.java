@@ -16,7 +16,7 @@ public class WhileMain05 {
 		    
 		    if(num == 1) {
 		    	System.out.print("예금액>");
-		    	//누적 대입연산자 사용
+		    	//누적 (대입연산자 사용)
 		    	balance += input.nextInt();
 		    }else if(num == 2) {
 		    	System.out.print("출금액>");
