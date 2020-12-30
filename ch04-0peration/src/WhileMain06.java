@@ -35,18 +35,21 @@ public class WhileMain06 {
 			payment = input.nextInt();
 			//구매 총 금액 구하기
 			total = price * quantity;
-			//거스름돈 조건 체크
+			//거스름돈 구하기
 			balance = payment - total;
+			//거스름돈 조건 체크
 			if(balance >= 0) {
 				break;//while문을 빠져나감
 			}
-			System.out.printf("%,d원이 부족합니다.%n",balance);
+			
+			System.out.printf(
+					"%,d원이 부족합니다.%n",-balance);
 			
 		}
 		//거스름돈 출력
 		System.out.printf("거스름돈 : %,d원", balance);
 		
-		input.close(); //break를 넣어주면 에러표시 사라짐. 컴파일
+		input.close();
 
 	}
 
