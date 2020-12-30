@@ -9,7 +9,7 @@ public class WhileMain02 {
 		}
 		
 		System.out.println("1부터 100까지의 합 : " + sum);
-		
+		//for문 보다는 while문이 간다하고 처리하기 편한 코드가 있음
 	}
 
 }
