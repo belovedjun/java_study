@@ -12,7 +12,7 @@ public class ForMain02 {
 		System.out.println("\n-------------");
 		
 		for(int i=0;i<=10;i++) {
-			if(i%2==0) {//짝수(대입연산자,증가연산자(조건추가)
+			if(i%2==0) {//짝수(대입연산자,증감연산자(조건추가)
 				System.out.print(i + "\t"); //단일 if문
 			}
 		}

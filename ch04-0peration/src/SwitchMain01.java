@@ -4,7 +4,7 @@ public class SwitchMain01 {
 				new java.util.Scanner(System.in);
 		System.out.printf("정수 하나 입력>");
 		int a = input.nextInt();
-		
+		      //인자값
 		switch(a) {//long형을 제외한 정수형(byte,short,int)
 				   //char
 		case 1:

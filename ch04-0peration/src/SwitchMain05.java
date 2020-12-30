@@ -21,49 +21,39 @@ public class SwitchMain05 {
 		 */
 		java.util.Scanner input =
 				new java.util.Scanner(System.in);
-		int first = 0, second = 0, result =0;
-		String operator;
+		int result =0; //0으로 초기화를 해야됨. 컴파일 할때
 		
 		System.out.print("첫번째 수:");
-		first = input.nextInt();
-		
-		System.out.print("두번째 수:");
-		operator = input.next();
-		
+		int first = input.nextInt();
+		System.out.print("연산자:");
+		String operator = input.next();
 		System.out.print("세번째 수:");
-		second = input.nextInt();
+		int second = input.nextInt();
 		
 		switch(operator) {
 		case "+":
-		 result = first + second;
-		  break;
+		 result = first + second;break;
 		case "-":
-		 result = first - second;
-		  break;
+		 result = first - second;break;
 		case "*":
-		 result = first * second;
-		  break;
+		 result = first * second;break;
 		case "/":
-		  result = first / second;
 		  if(second!=0) {
-				result = first / second;
+				result = first / second;break;
 			}else {
-				System.out.println("0으로 나눌수 없습니다.");
-				System.exit(0);
+				System.out.println("0으로 나눌수 없습니다."); //0으로 나누는 경우 문제발생
+				System.exit(0); //프로그램 종료
 			}
-		break;
 		case "%":
-		 result = first % second;
 		 if(second!=0) {
-				result = first / second;
+				result = first % second;break;
 			}else {
 				System.out.println("0으로 나눌수 없습니다.");
-				System.exit(0);
-			}
-		 break; 
+				System.exit(0); //프로그램 종료
+			} 
 		default:
 		 System.out.println("잘못된 연산자 입력");
-		 System.exit(0);
+		 System.exit(0); //프로그램 종료
 		}
 		
 		System.out.printf(

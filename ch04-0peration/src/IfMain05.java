@@ -1,7 +1,7 @@
 public class IfMain05 {
 	public static void main(String[] args) {
 		int a = 10;
-		float b = 10.0f;
+		float b = 10.0f; //모든연산자를 사용할때 자료형을 맞춰야됨.
 		
 		if(a == b) {//int -> float, 10.0f == 10.0f
 			System.out.println("10과 10.0f는 같다");

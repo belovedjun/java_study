@@ -7,7 +7,7 @@ public class Ifmain04 {
 		char grade;//등급 문자코드
 		
 		System.out.print("성적 입력>>");
-		score = input.nextInt();
+		score = input.nextInt(); //논리,비교연산자 사용
 		if(score >= 90 && score <= 100) {
 			grade = 'A';
 		}else if(score >= 80 && score <= 89) {
