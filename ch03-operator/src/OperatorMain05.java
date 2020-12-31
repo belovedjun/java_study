@@ -11,18 +11,18 @@ public class OperatorMain05 {
 		 * 학생 한 명이 가지는 연필 수 : **
 		 * 남은 연필 수 : **
 		 */
-		
+		//변수를 초기화
 		int pencils = 534;
 		int students = 30;
 		
-		//학생 한 명이 가지는 연필 수
+		//학생 한 명이 가지는 연필 수(연필값과 학생수를 나눠준다)
 		int quantity = pencils / students;
 		int avg = 534 / 30;
 		
 		System.out.printf(
 				"학생 한명이 가지는 연필 수 : %d%n", quantity);
 		
-		//남은 연필 수
+		//남은 연필 수(연필값과 학생수의 나머지값을 구한다)
 		int rest = pencils % students;
 		System.out.println("남은 연필 수 : " + rest);
 	}

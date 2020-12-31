@@ -10,7 +10,7 @@ public class IfMain01 {
 		
 		System.out.println("-------------");
 		
-		//if문 블럭내의 수행문이 한 줄이면 {}블럭을 생략할 수 있음
+		//if문 블럭내의 수행문이 한 줄이면 {}블럭을 생략할 수 있음(많이 사용)
 		if(a < 5)
 			System.out.println("a는 5보다 작다"); //false
 		

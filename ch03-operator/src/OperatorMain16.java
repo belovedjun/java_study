@@ -19,7 +19,7 @@ public class OperatorMain16 {
 				new java.util.Scanner(System.in);
 		
 		System.out.print("상품명 입력:");
-		String item = input.next();
+		String item = input.next();//문자열만 가능
 		System.out.print("단가 입력:");
 		int price = input.nextInt();
 		System.out.print("판매 수량:");

@@ -2,7 +2,7 @@ public class SwitchMain03 {
 	public static void main(String[] args) {
 		java.util.Scanner input =
 				new java.util.Scanner(System.in);
-		
+		//switch 문은 ==만 사용가능.
 		int score;
 		char grade;
 		

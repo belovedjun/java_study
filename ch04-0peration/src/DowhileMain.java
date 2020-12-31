@@ -3,7 +3,7 @@ public class DowhileMain {
 		int su = 0;
 		String str = "Hello world!!";
 				
-		while(su++ < 5) {
+		while(su++ < 5) {//일반적으로 while을 많이씀
 			System.out.println(str);
 		}
 		

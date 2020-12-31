@@ -5,7 +5,7 @@ public class OperatorMain11 {
 		char ch = 'b';
 		String s;
 			//       조건       ? 참값 : 거짓값   
-		s =(ch>='A' && ch<='z') ? "대문자임" : "대문자가 아님";
+		s =(ch>='A' && ch<='z') ? "대문자가 아님" : "대문자임";
 		
 		System.out.println(ch + "=>" + s);
 	}

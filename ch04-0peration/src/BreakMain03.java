@@ -7,7 +7,7 @@ public class BreakMain03 {
 		for(int i=0;i<3;i++) {
 			for(int j=0;j<5;j++) {
 				
-				if(j==3) break exit_for;
+				if(j==3) break exit_for;//이 영역을 완전히 빠져나감.
 				
 				System.out.println("i값 : " + i + ", j값 : " + j);
 			}

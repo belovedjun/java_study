@@ -8,9 +8,9 @@ public class Score {
 		
 		//점수는 0~100 만 입력 가능
 		do {
-			System.out.print("국어>");
+			System.out.print("국어>");//false
 			국어 = input.nextInt();
-		}while(국어 < 0 || 국어 > 100);
+		}while(국어 < 0 || 국어 > 100); //true가 나오면 무한루프
 		
 		do {
 			System.out.print("영어>");

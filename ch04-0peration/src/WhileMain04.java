@@ -10,7 +10,7 @@ public class WhileMain04 {
 			System.out.print("누적할 숫자 입력>");
 			a =input.nextInt();
 			//입력한 값이 0이면 반복문을 빠져나감
-			if(a==0) {
+			if(a==0) {//특정조건일때 빠져나감
 				break;
 			}
 			//누적

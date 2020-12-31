@@ -1,6 +1,6 @@
 public class ForMain05 {
 	public static void main(String[] args) {
-		//2단부터 9단까지 출력
+		//2단부터 9단까지 출력 (다중if문 사용)
 		   //단
 		for(int dan=2;dan<=9;dan++) {
 			System.out.println("** " + dan + "단 **");

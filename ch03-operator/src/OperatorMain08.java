@@ -1,6 +1,6 @@
 public class OperatorMain08 {
 	public static void main(String[] args) {
-		//증감연산자1, 비교연산자4, 논리연산자    6순위  
+		//증감연산자1순위, 비교연산자4순위, 논리연산자 6순위  
 		
 		int a, b;
 		a = b = 10;
@@ -18,7 +18,7 @@ public class OperatorMain08 {
 		                 //메모리에는 e가 11
 		boolean f = ++d < e++ || d++ >= ++e;
 		       //   11    10      11     12
-		       //     false         O
+		       //     false         false
 		
 		System.out.println(d + ", " + e);//12, 12
 		System.out.println("변수 f의 값 : " + f);//false

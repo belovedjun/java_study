@@ -6,15 +6,15 @@ public class OperatorMain07 {
 		a = true;
 		b = false;
 		
-		//논리곱
+		//논리곱(주어진 조건들이 모두 true일때만 true를 나타냄)(&&:엔드엔드)
 		result = a && b;
 		System.out.println("a && b : " + result);
 		
-		//논리합
+		//논리합(주어진 조건들중 하나라도 true이면 true를 나타냄) (||:파이프파이프)
 		result = a || b;
 		System.out.println("a || b : " + result);
 		
-		//부정
+		//부정(true는 false로 false는 true로 나타냄)
 		result = !a;
 		System.out.println("!a : " + result);
 	}

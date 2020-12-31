@@ -14,7 +14,7 @@ public class CoffeeMachine02 {
 		int price = 300;
 		//보유 금액
 		int amount = 0; //+
-		//보유동전
+		//보유동전(거스름돈으로 제공)
 		int coin = 1000; //-
 		
 		while(true) {
@@ -26,14 +26,14 @@ public class CoffeeMachine02 {
 				int payment = input.nextInt();
 				//거스름돈(change) 연산
 				int change = payment - price;
-				
+				  //투입한금액
 				if(payment < price) {
 					System.out.println("투입한 금액 부족!!");
-					continue; 
+					continue; //if else를 쓰는 효과(코드 간결하게)
 				}
 				
  				//거스름돈 지불 여부 체크
-				if(coin < change) {
+				if(coin < change) {//false 실행안됨
 					//거스름돈을 지불할 수 없으면
 					//"거스름돈 부족"
 					System.out.println("거스름돈 부족!");
