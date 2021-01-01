@@ -12,7 +12,7 @@ public class ForMain04 {
 			System.out.println(
 					dan + "*" + i + "=" + dan * i); 
 		}
-		input.close(); //반복문을 사용할때 무한루프에 빠지지 않게 주의
+		input.close(); //반복문을 사용할때 무한루프에 빠지지 않게주의
 
 	}
 
