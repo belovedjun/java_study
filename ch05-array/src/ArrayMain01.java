@@ -1,6 +1,6 @@
 public class ArrayMain01 {
 	public static void main(String[] args) {
-		char[] ch;//배열 선언(배열생성x)만들준비 주소를 만들기위해서~
+		char[] ch;//배열 선언(배열생성x)만들준비. 주소를 만들기위해서~
 		ch = new char[4];//배열 생성
 		
 		//배열 초기화 (연속적인 공간에 0->'j'...)

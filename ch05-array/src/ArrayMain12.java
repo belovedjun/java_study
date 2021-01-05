@@ -27,7 +27,7 @@ public class ArrayMain12 {
  		//객체를 사용하기 때문에 2차원 배열은 사용하지 않음.(데이터입력,호출 방법 기억만!)
  		//자바같은경우 1차원 배열을 자주씀 (2차원 가끔, 3차원 거의 안씀)
  		//반복문을 이용해서 배열의 요소를 출력
- 		for(int i=0;i<test.length;i++) {//i : 행번호 0~1
+ 		for(int i=0;i<test.length;i++) {//i : 행번호 0~1   이중for문
  			for(int j=0;j<test[i].length;j++) {//j : 열번호 0~2
  				System.out.println(
  						"test["+i+"]["+j+"]:" + test[i][j]);

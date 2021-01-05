@@ -1,0 +1,19 @@
+package com.s01.basic;
+public class InstanceMain {
+	//멤버 변수
+	int var1;
+	String str;
+	
+	//멤버 메서드
+	public int sum(int a, int b) {
+		return a + b;//반환한다. 
+	}
+	
+	public static void main(String[] args) {
+		//객체 선언 및 생성
+		InstanceMain im = new InstanceMain();
+		//객체의 맴버 메서드 호출
+		int result = im.sum(10, 20);
+		System.out.println("result = " + result);
+	}
+}

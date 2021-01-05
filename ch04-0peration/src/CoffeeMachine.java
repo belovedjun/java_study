@@ -17,53 +17,37 @@ public class CoffeeMachine {
 		//보유 동전(거스름돈)
 		int coin = 1000; //-
 		
-		// 계속 반복하여 아래의 코드를 실행한다.
-		while(true) {
-			System.out.print("원하시는 행동을 선택해주세요. 1:커피마시기,2:종료>");
-			// 사용자가 하려는 행동의 숫자
-			int num = input.nextInt();
-			// 커피마시기 
-			if(num == 1) {
-				System.out.printf("동전 입력>"); //한잔만 뽑기 가능
-				// 보유금액				
-				int payment = input.nextInt(); 
-				//거스름돈(change) 연산
-				int change = payment - price;
-				//지불 금액 입력(payment)
-				
-				
-				//거스름돈 지불 여부 체크
-				if(coin < change) {
-					//거스름돈을 지불할 수 없으면
-					//"거스름돈 부족"
-					System.out.println("거스름돈 부족!");
-					continue;
-				}
-				
-				//거스름돈을 지불할 수 있으면
-				//coin에서 change를 차감
-				//거스름돈을 출력함
-				coin -= change;
-				//payment를 amount에 누적
-				amount += payment;
-				
-				//거스름돈을 출력함
-				System.out.printf("거스름돈 : %,d%n", change);
-				System.out.println(
-						"맛 좋은 커피가 준비되었습니다.");
-				
-				//현재 자판기 정보 출력
-				System.out.println("==현재자판기 정보==");
-				System.out.printf("동전보유금액: %,d원%n",coin);
-				System.out.printf("총투입금액: %,d원%n",amount);
-				
-			}else if(num == 2) {
-				System.out.println("자판기 프로그램 종료");
-				break;
-			}else {
-				System.out.println("잘못된 입력했습니다.");
-			}
-		}
+        while(true) {
+        	System.out.printf("1.커피마시기, 2.종료>");
+        	int num = input.nextInt();
+        	if(num == 1) {
+        		System.out.printf("동전 입력>");
+        		int payment = input.nextInt();
+        		int change = payment-price;
+        		if(payment < price) {
+        			System.out.println("투입한 금액 부족!");
+        			continue;
+        		}
+        		if(coin < change) {
+        			System.out.println("거스름돈 부족!");
+        			continue;
+        		}
+        		coin -= change;
+        		amount += payment;
+  
+        		System.out.printf("거스름돈 : %d원%n",change);
+        		System.out.println("맛 좋은 커피가 나왔습니다");
+        		
+        		System.out.println("==현재 자판기 정보==");
+        		System.out.printf("동전 보유 금액 : %d원%n",coin);
+        		System.out.printf("총 투입 금액 : %d원%n",amount);
+        	}else if (num == 2){
+        		System.out.println("자판기 프로그램 종료");
+        		break;
+       	}else {
+       		System.out.println("잘못 입력했습니다.");
+       	}
+      }	
 		input.close();
 	}
 }
