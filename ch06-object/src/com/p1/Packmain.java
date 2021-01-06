@@ -4,7 +4,7 @@ package com.p1;
 //클래스를 호출때 패키지를 생략하고 클래스를 호출해도 인식
 import com.p2.PackTwo;
 
-public class packMain {
+public class PackMain {
 	public static void main(String[] args) {
 		//com.p1.PackOne p1 = new com.p1.PackOne();
 		//같은 패키지의 클래스는 패키지를 생략하고 클래스만 명시 가능
